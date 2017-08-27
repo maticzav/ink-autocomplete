@@ -1,3 +1,19 @@
+# ink-autocomplete
+
+> Autocomplete component for [Ink](https://github.com/vadimdemedes/ink).
+
+
+## Install
+
+```
+$ npm install ink-autocomplete
+```
+
+## Usage
+
+__Use arrows to navigate up and down and press enter to submit.__
+
+```jsx
 import {h, render, Component, Text} from 'ink'
 import AutoComplete from '..'
 
@@ -67,3 +83,37 @@ class Demo extends Component {
 
 // Ink
 render(<Demo/>)
+```
+
+<img src="media/demo.gif" width="508">
+
+
+## Props
+
+#### value `string`
+> Value of the input.
+
+#### placeholder `string`
+> String displayed when the input is empty.
+
+#### items `array<item>`
+> A list of all items. Each item must include `label` and `value` property.
+
+#### getMatch `string => item => bool`
+> Called to determine which items satisfy the input.
+
+#### onChange `function string => ()`
+> Called each time input is changed.
+
+#### onSubmit `function (item) => ()`
+> Called once suggestion is selected.
+
+#### indicatorComponent `Component`
+> Custom component to override the default item component.
+
+#### itemComponent `Component`
+> Custom component to override the default item component.
+
+## License
+
+MIT © [Matic Zavadlal](http://github.com/maticzav)
