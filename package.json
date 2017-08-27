@@ -1,0 +1,70 @@
+{
+  "name": "ink-autocomplete",
+  "version": "0.0.0",
+  "description": "An autocomplete component for Ink.",
+  "repository": "maticzav/ink-autocomplete",
+  "author": "Matic Zavadlal <matic.zavadlal@gmail.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "pretest": "npm run build",
+    "test": "xo && ava",
+    "build": "babel src --out-dir=dist",
+    "prepublish": "npm run build"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "cli",
+    "ink-cli",
+    "ink",
+    "autocomplete",
+    "ink-component",
+    "component"
+  ],
+  "dependencies": {
+    "ink-select-input": "^1.0.0",
+    "ink-text-input": "^1.1.0",
+    "prop-types": "^15.5.10"
+  },
+  "devDependencies": {
+    "ava": "^0.21.0",
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-es2015-node5": "^1.2.0",
+    "eslint-config-xo-react": "^0.13.0",
+    "eslint-plugin-react": "^7.2.0",
+    "eslint-plugin-xo": "^1.0.0",
+    "ink": "^0.3.1",
+    "sinon": "^3.2.0",
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "extends": "xo-react",
+    "parser": "babel-eslint",
+    "esnext": true,
+    "space": true,
+    "semicolon": false,
+    "rules": {
+      "new-cap": 0,
+      "complexity": 0,
+      "default-case": 0,
+      "react/no-unused-prop-types": 1
+    },
+    "settings": {
+      "react": {
+        "pragma": "h"
+      }
+    }
+  },
+  "ava": {
+    "babel": "inherit"
+  }
+}
