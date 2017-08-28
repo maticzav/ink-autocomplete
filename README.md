@@ -1,4 +1,4 @@
-# ink-autocomplete
+# ink-autocomplete [![Build Status](https://travis-ci.org/maticzav/ink-autocomplete.svg?branch=master)](https://travis-ci.org/maticzav/ink-autocomplete)
 
 > Autocomplete component for [Ink](https://github.com/vadimdemedes/ink).
 
