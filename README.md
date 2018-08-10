@@ -15,7 +15,7 @@ __Use arrows to navigate up and down and press enter to submit.__
 
 ```jsx
 import {h, render, Component, Text} from 'ink'
-import AutoComplete from '..'
+import AutoComplete from 'ink-autocomplete'
 
 // Demo
 class Demo extends Component {
